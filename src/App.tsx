@@ -28,6 +28,7 @@ function App() {
               }
             ]}/>
             <Components.Icon iconName="facebook"/>
+            <Components.Button title="Взять кредит" onClick={() => null}/>
           </>
         }/>
       </Switch>

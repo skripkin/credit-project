@@ -31,6 +31,26 @@ function App() {
                   link: "news"
                 }
               ]}/>
+              <div style={({backgroundColor: "black"})}>
+                <Components.Networks netItems={[
+                  {
+                    type: "facebook",
+                    linkToNetwork: "#"
+                  },
+                  {
+                    type: "instagram",
+                    linkToNetwork: "#"
+                  },
+                  {
+                    type: "youtube",
+                    linkToNetwork: "#"
+                  },
+                  {
+                    type: "telegam",
+                    linkToNetwork: "#"
+                  }
+                ]}/>
+              </div>
           </>
         }/>
       </Switch>

@@ -9,26 +9,28 @@ function App() {
       <Switch>
         <Route path="/" component={() =>
           <>
-            <Components.Menu menuItems={[
-              {
-                title: "инвесторам",
-                link: "investing"
-              },
-              {
-                title: "предпринимателям",
-                link: "entrepreneurs"
-              },
-              {
-                title: "о платформе",
-                link: "about-us"
-              },
-              {
-                title: "новости",
-                link: "news"
-              }
-            ]}/>
-            <Components.Icon iconName="facebook"/>
-            <Components.Button title="Взять кредит" onClick={() => null}/>
+            <Components.Header 
+              logoImage="./logo.png"
+              logoLink="/"
+              onLoginClick={() => null}
+              headerMenu={[
+                {
+                  title: "инвесторам",
+                  link: "investing"
+                },
+                {
+                  title: "предпринимателям",
+                  link: "entrepreneurs"
+                },
+                {
+                  title: "о платформе",
+                  link: "about-us"
+                },
+                {
+                  title: "новости",
+                  link: "news"
+                }
+              ]}/>
           </>
         }/>
       </Switch>

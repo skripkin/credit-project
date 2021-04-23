@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 import * as Styled from "./styles";
 
-interface IProp {
+export interface IProp {
   title: string;
   link: string;
 }

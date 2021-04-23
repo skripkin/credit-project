@@ -3,7 +3,7 @@ import { iconName } from "../icon/icon";
 
 import * as Styled from "./styles";
 
-interface IProp {
+export interface IProp {
   type: iconName;
   linkToNetwork: string; 
 }

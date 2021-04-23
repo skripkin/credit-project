@@ -31,8 +31,13 @@ function App() {
                   link: "news"
                 }
               ]}/>
-              <div style={({backgroundColor: "black"})}>
-                <Components.Networks netItems={[
+
+              
+              <Components.Footer 
+                logo="./footerLogo.png" 
+                address="Москва, территория инновационного центра «Сколково», ул. Нобеля, д. 5, эт/пом/раб 2/8/2"
+                licenceDesc="© 2018 —2021 Все права защищены ООО «ДжетЛэнд», официальный сайт Лицензия ЦБ РФ №18"
+                networks={[
                   {
                     type: "facebook",
                     linkToNetwork: "#"
@@ -49,9 +54,42 @@ function App() {
                     type: "telegam",
                     linkToNetwork: "#"
                   }
-                ]}/>
-                <Components.BankLicense bankIcon="gerb" title="Банк России" license="./license.png"/>
-              </div>
+                ]}
+                footerLeftMenu={[
+                  {
+                    title: "инвесторам",
+                    link: "investing"
+                  },
+                  {
+                    title: "предпринимателям",
+                    link: "entrepreneurs"
+                  },
+                  {
+                    title: "партнерам",
+                    link: "partners"
+                  }
+                ]}
+                footerRightMenu={[
+                  {
+                    title: "документы",
+                    link: "documents"
+                  },
+                  {
+                    title: "о платформе",
+                    link: "about-us"
+                  },
+                  {
+                    title: "новости",
+                    link: "news"
+                  }
+                ]}
+                licenseInfo={{
+                  icon: "gerb",
+                  bankTitle: "Банк России",
+                  licenseImg: "./license.png"
+                }}
+                onLoginClick={() => null}
+              />
 
           </>
         }/>

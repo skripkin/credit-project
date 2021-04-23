@@ -50,7 +50,9 @@ function App() {
                     linkToNetwork: "#"
                   }
                 ]}/>
+                <Components.BankLicense bankIcon="gerb" title="Банк России" license="./license.png"/>
               </div>
+
           </>
         }/>
       </Switch>

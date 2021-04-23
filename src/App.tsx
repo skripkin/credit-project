@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <Components.Menu />
+      <Components.Icon iconName="facebook"/>
     </>
   );
 }

@@ -7,6 +7,7 @@ const Partners = ["forbs", "comersant", "rbk", "vision", "vc", "republic", "bank
 
 const LandingPage = () => {
   const [tab, setTab] = React.useState("overview");
+  const [isclick, setIsclick] = React.useState(false);
 
   return(
     <>
@@ -93,7 +94,19 @@ const LandingPage = () => {
           )}
         </Styled.PartnerCardBox>
       </Styled.PartnersContainer>
-      
+      <Styled.AboutBox>
+        <Styled.LeftBox>
+          {!isclick ?
+            <Styled.FrameLock onClick={() => setIsclick(!isclick)}/>
+          :
+            <Styled.YoutubeFrame width="100%" height="420px" src="https://www.youtube.com/embed/NoKqKjTUMw0" title="YouTube video player" allow="autoplay"></Styled.YoutubeFrame>
+          }
+        </Styled.LeftBox>
+        <Styled.RightBox>
+          <Styled.RightTitle>Jetlend — надежный партнер</Styled.RightTitle>
+          <Styled.RightDesc>Спонсорство искажает бренд. Диктат потребителя, как принято считать, обычно правомочен. Стоит отметить, что управление брендом исключительно экономит потребительский conversion rate, отвоевывая свою долю рынка. Повышение жизненных стандартов притягивает опрос, учитывая современные тенденции. Повторный контакт, в рамках сегодняшних воззрений, версифицирован. Селекция бренда традиционно консолидирует рейтинг.</Styled.RightDesc>
+        </Styled.RightBox>
+      </Styled.AboutBox>
     </>
   )
 };

@@ -217,3 +217,51 @@ export const Partner = styled.div`
     margin-right: 0;
   }
 `;
+
+export const AboutBox = styled.div`
+  display: flex;
+`;
+
+export const LeftBox = styled.div`
+  flex: 1;
+`;
+
+export const FrameLock = styled.div`
+  width: 100%;
+  height: 420px;
+  background: url(./skeleton.png) no-repeat;
+  cursor: pointer;
+`;
+
+export const YoutubeFrame = styled.iframe`
+  border: none;
+  display: block;
+`;
+
+export const RightBox = styled.div`
+  flex: 1;
+  background-color: ${colors.caribbeanGreen};
+  padding-top: 90px;
+  padding-left: 120px;
+`;
+
+export const RightTitle = styled.p`
+  width: 50%;
+  margin-bottom: 15px;
+  font-family: Red Ring;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 47px;
+  color: ${colors.white};
+`;
+
+export const RightDesc = styled.p`
+  width: 50%;
+  font-family: Red Ring;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: ${colors.white};
+`;

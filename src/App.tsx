@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Switch } from "react-router-dom";
+import { AppRoute } from "./components";
 
-import * as Components from "./components";
+import * as Page from "./pages";
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Components.AppRoute path="/" component={() => <div style={({height: "100vh"})}>Route is work</div>}/>
+        <AppRoute path="/" component={Page.LandingPage}/>
       </Switch>
     </BrowserRouter>
   );

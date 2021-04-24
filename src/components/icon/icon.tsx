@@ -8,7 +8,14 @@ export type iconName =
 | "instagram"
 | "join"
 | "telegam"
-| "youtube";
+| "youtube"
+| "banki"
+| "comersant"
+| "forbs"
+| "rbk"
+| "republic"
+| "vc"
+| "vision";
 
 interface IProps {
   iconName: iconName;

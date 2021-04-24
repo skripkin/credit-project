@@ -9,3 +9,4 @@ export { default as AppRoute } from "./app-route";
 export { default as ProcentInput } from "./procent-input"
 export { default as Calculator } from "./calculator";
 export { default as Stepper } from "./stepper";
+export { default as PartnerCard } from "./partner-card";

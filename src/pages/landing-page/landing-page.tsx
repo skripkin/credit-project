@@ -3,6 +3,8 @@ import React from "react";
 import * as Styled from "./styles";
 import * as Components from "../../components";
 
+const Partners = ["forbs", "comersant", "rbk", "vision", "vc", "republic", "banki"];
+
 const LandingPage = () => {
   const [tab, setTab] = React.useState("overview");
 
@@ -81,9 +83,17 @@ const LandingPage = () => {
           <Components.Calculator />
         </Styled.CalcBox>
       </Styled.CalculatorContainer>
-      <Styled.PrtnersContainer>
-        
-      </Styled.PrtnersContainer>
+      <Styled.PartnersContainer>
+        <Styled.PartnersTitle>СМИ о нас <Styled.PartnersLink href="#">Наши партнеры</Styled.PartnersLink></Styled.PartnersTitle>
+        <Styled.PartnerCardBox>
+          {Partners.map(item =>
+            <Styled.Partner key={item}>
+              <Components.PartnerCard icon={item}/>
+            </Styled.Partner>
+          )}
+        </Styled.PartnerCardBox>
+      </Styled.PartnersContainer>
+      
     </>
   )
 };

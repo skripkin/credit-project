@@ -59,6 +59,7 @@ const LandingPage = () => {
           </Styled.BenifitsBox>
         </Styled.BenifitsBoxes>
       </Styled.BenifitsContainer>
+      <Components.Calculator />
     </>
   )
 };

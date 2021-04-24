@@ -25,7 +25,7 @@ const Calculator = () => {
         </Styled.InputContainer>
         <Styled.SumBox>
           <Styled.SumTitle>Ежемесячный платеж</Styled.SumTitle>
-          <Styled.SumNumber>{Filter(getSumMonth)} ₽</Styled.SumNumber>
+          <Styled.SumNumber>{getSumMonth ? Filter(getSumMonth) : 0} ₽</Styled.SumNumber>
           <Button title="Получить кредит" onClick={() => null}/>
         </Styled.SumBox>
       </Styled.FlexBox>

@@ -8,3 +8,4 @@ export { default as Footer } from "./footer";
 export { default as AppRoute } from "./app-route";
 export { default as ProcentInput } from "./procent-input"
 export { default as Calculator } from "./calculator";
+export { default as Stepper } from "./stepper";

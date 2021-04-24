@@ -59,7 +59,31 @@ const LandingPage = () => {
           </Styled.BenifitsBox>
         </Styled.BenifitsBoxes>
       </Styled.BenifitsContainer>
-      <Components.Calculator />
+      <Styled.CalculatorContainer>
+        <Styled.CalcTitle>Как получить оборотный кредит</Styled.CalcTitle>
+        <Styled.StepBox>
+          <Components.Stepper steps={[
+            {
+              title: "Пройдите регистрацию",
+              isActive: true
+            },
+            {
+              title: "Получите предварительное решение",
+              isActive: false
+            },
+            {
+              title: "Пройдите верификацию и получите деньги",
+              isActive: false
+            }
+          ]}/>
+        </Styled.StepBox>
+        <Styled.CalcBox>
+          <Components.Calculator />
+        </Styled.CalcBox>
+      </Styled.CalculatorContainer>
+      <Styled.PrtnersContainer>
+        
+      </Styled.PrtnersContainer>
     </>
   )
 };

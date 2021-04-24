@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { colors } from "../../constants";
 
 export const Container = styled.div`
-  max-width: 1320px;
   margin: 0 auto;
   padding: 50px 100px;
   background-color: ${colors.white};

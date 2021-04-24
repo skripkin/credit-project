@@ -143,3 +143,41 @@ export const BenifitsBoxDesc = styled.p`
   line-height: 17px;
   color: ${colors.black};
 `;
+
+export const CalculatorContainer = styled.div`
+  width: 100%;
+  height: 568px;
+  padding-top: 82px;
+  position: relative;
+  background: url(./calc-bg.png) no-repeat;
+  background-size: cover;
+`;
+
+export const CalcTitle = styled.p`
+  margin-bottom: 54px;
+  font-family: Red Ring;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+  color: ${colors.white};
+`;
+
+export const StepBox = styled.div`
+  width: 50%;
+  margin: 0 auto;
+`;
+
+export const CalcBox = styled.div`
+  width: 75%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
+export const PrtnersContainer = styled.div`
+  padding-top: 314px;
+  background-color: ${colors.aquaHaze};
+`;

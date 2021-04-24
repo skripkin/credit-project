@@ -6,3 +6,5 @@ export { default as Networks } from "./networks";
 export { default as BankLicense } from "./bank-license";
 export { default as Footer } from "./footer";
 export { default as AppRoute } from "./app-route";
+export { default as ProcentInput } from "./procent-input"
+export { default as Calculator } from "./calculator";

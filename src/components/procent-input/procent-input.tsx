@@ -44,8 +44,8 @@ const ProcentInput = ({ title, startSum, finishSum, vailut, type, onChange }: IP
         </Styled.ProgressBox>
       </Styled.InputBox>
       <Styled.DescFlex>
-        <Styled.BottomTitle>{startSum} {vailut}</Styled.BottomTitle>
-        <Styled.BottomTitle>{finishSum} {vailut}</Styled.BottomTitle>
+        <Styled.BottomTitle>{Filter(startSum)} {vailut}</Styled.BottomTitle>
+        <Styled.BottomTitle>{Filter(finishSum)} {vailut}</Styled.BottomTitle>
       </Styled.DescFlex>
     </Styled.Container>
   )

@@ -177,7 +177,43 @@ export const CalcBox = styled.div`
   transform: translateX(-50%);
 `;
 
-export const PrtnersContainer = styled.div`
+export const PartnersContainer = styled.div`
+  padding: 0 80px;
   padding-top: 314px;
+  padding-bottom: 72px;
   background-color: ${colors.aquaHaze};
+`;
+
+export const PartnersTitle = styled.p`
+  margin-bottom: 39px;
+  font-family: Red Ring;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+  color: ${colors.black};
+`;
+
+export const PartnersLink = styled.a`
+  font-family: Red Ring;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 47px;
+  color: ${colors.caribbeanGreen};
+  border-bottom: 2px dotted ${colors.caribbeanGreen};
+`;
+
+export const PartnerCardBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const Partner = styled.div`
+  margin-right: 16px;
+
+  :last-child{
+    margin-right: 0;
+  }
 `;

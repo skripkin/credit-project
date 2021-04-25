@@ -24,7 +24,9 @@ const LandingPage = () => {
               <Styled.CreditTabTitle isactive={tab === "questions" && true}>Вопросы</Styled.CreditTabTitle>
             </Styled.CreditTabBox>
           </Styled.CreditTabsContainer>
-          <Components.BankLicense bankIcon="gerb" title="Банк России" license="./license.png" isLarge={true}/>
+          <Styled.BankBox>
+            <Components.BankLicense bankIcon="gerb" title="Банк России" license="./license.png" isLarge={true}/>
+          </Styled.BankBox>
         </Styled.CreditTopBox>
         <Styled.CreditTitle>Кредит на пополнение оборотных средств</Styled.CreditTitle>
         <Styled.RateContainer>

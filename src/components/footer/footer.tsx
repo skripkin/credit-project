@@ -55,6 +55,9 @@ const Footer = ({ logo, address, licenceDesc, networks, footerLeftMenu, footerRi
         <Styled.LicenseDescription>{licenceDesc}</Styled.LicenseDescription>
         <BankLicense bankIcon={licenseInfo.icon} title={licenseInfo.bankTitle} license={licenseInfo.licenseImg}/>
       </Styled.LicenseBox>
+      <Styled.SocialBoxAdaptive>
+          <Networks netItems={networks}/>
+        </Styled.SocialBoxAdaptive>
     </Styled.Container>
   )
 };

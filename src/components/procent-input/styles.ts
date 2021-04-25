@@ -46,6 +46,7 @@ export const InputBox = styled.div`
 `;
 
 export const Input = styled.input`
+  width: 100%;
   font-family: Red Ring;
   font-style: normal;
   font-weight: 500;

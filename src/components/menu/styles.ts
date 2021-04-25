@@ -11,13 +11,7 @@ export const MenuBox = styled.ul`
   justify-content: space-between;
 `;
 
-export const MenuItemBox = styled.li`
-  margin-right: 32px;
-
-  :last-child {
-    margin-right: 0;
-  }
-`;
+export const MenuItemBox = styled.li``;
 
 export const MenuItem = styled(Link)<{isactive: boolean}>`
   padding-bottom: 2px;
@@ -27,6 +21,7 @@ export const MenuItem = styled(Link)<{isactive: boolean}>`
   font-size: 14px;
   line-height: 19px;
   color: ${colors.black};
+  white-space: nowrap;
 
   ${({isactive}) => isactive && css`
     border-bottom: 3px solid ${colors.caribbeanGreen};
